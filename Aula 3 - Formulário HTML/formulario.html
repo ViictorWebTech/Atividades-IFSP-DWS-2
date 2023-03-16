@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Praticando 1 - Formulário HTML Aula 2</h1>
+
+    <div class="pai">
+
+        <div class="filho">
+
+            <form action="paginadestino.html" method="get">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"> <br> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"> <br> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"> <br> <br>
+
+                <label for="endereco">Endereço URL:</label>
+                <input type="url" id="endereco" name="endereco"> <br> <br>
+
+                <label for="nota">Nota (0 a 10)</label>
+                <input type="number" id="nota" name="nota" min="0" max="10"> <br> <br>
+
+                <label for="data">Data do cadastro</label>
+                <input type="date" name="data" id="data"> <br> <br>
+
+                <button class="enviar" type="submit" value="Submit">Submit</button>
+
+                <button class="resetar" type="reset" value="Reset">Reset</button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

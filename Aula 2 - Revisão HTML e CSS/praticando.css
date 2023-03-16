@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+}
+.titulo {
+  background-color: gray;
+  padding: 30px;
+  text-align: center;
+}
+.pai {
+  display: flex;
+  border-top: black 5px solid;
+  height: 100%;
+}
+.direita {
+  border-left: black 5px solid;
+  width: 65%;
+  padding: 20px;
+  text-align: justify;
+  font-size: larger;
+  height: 650px;
+}
+.esquerda {
+  text-align: center;
+  width: 35%;
+  height: 500px;
+  background-color: rgba(53, 220, 76, 0.866);
+  border-radius: 30px;
+  margin: 10px;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: bolder;
+  font-size: large;
+}
+.loja {
+  width: 90%;
+}
+.vendedor {
+  width: 250px;
+  margin: 20px;
+  float: right;
+}
+.subtitulo {
+  border-bottom: double green 7px;
+}

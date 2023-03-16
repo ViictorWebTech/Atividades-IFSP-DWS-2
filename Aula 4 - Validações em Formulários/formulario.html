@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Praticando 1 - Formulário HTML Aula 2</h1>
+
+    <div class="pai">
+
+        <form action="paginadestino.html" method="get">
+
+            <div class="filho1">
+
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" name="nome" required> <br> <br>
+
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email" id="email" required placeholder="Digite seu email"> <br> <br>
+
+                <label for="telefone">Telefone:</label> <br>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(DD)XXXXX-XXXX"
+                    pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" title="Digite o telefone no formato (DD)XXXXX-XXXX">
+                <br> <br>
+
+                <label for="cpf">CPF:</label> <br>
+                <input type="text" id="cpf" name="cpf" required placeholder="XXX.XXX.XXX-XX" 
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato XXX.XXX.XXX-XX"> <br> <br>
+
+                <label for="data">Data do cadastro:</label> <br>
+                <input type="date" name="data" id="data" required> <br> <br>
+
+                <label for="url">Endereço URL:</label> <br>
+                <input type="url" id="url" name="url" required> <br> <br>
+
+
+                <button class="resetar" type="reset" value="Reset" required>Reset</button>
+
+
+            </div>
+
+            <div class="filho2">
+
+                <label for="nota">Nota (0 a 10):</label> <br>
+                <input type="number" id="nota" name="nota" min="0" max="10" required> <br> <br>
+
+                <label for="cep">CEP:</label> <br>
+                <input type="text" id="cep" name="cep" required placeholder="XX.XXX-XXX"
+                pattern="\d{2}\.\d{3}-\d{3}" title="Digite o CEP no formato XX.XXX-XXX"> <br> <br>
+
+                <label for="endereco">Endereço:</label> <br>
+                <input type="text" id="endereco" name="endereco" required placeholder="Rua, n° e bairro"> <br> <br>
+
+                <label for="cidade">Cidade</label> <br>
+
+                <select name="cidade" id="cidade" required>
+                    <option value="nada">[selecione]</option>
+                    <option value="cidade1">Álvares Florence</option>
+                    <option value="cidade2">Cosmorama</option>
+                    <option value="cidade2">Votuporanga</option>
+
+                </select> <br> <br>
+
+
+                <label for="fotoperfil">Foto de Perfil</label> <br>
+                <input type="file" name="fotoperfil" id="fotoperfil" required accept="image/*"> <br> <br>
+
+                <label for="contrato">Contrato assinado (em PDF)</label> <br>
+                <input type="file" name="contrato" id="contrato" required accept=".pdf, .doc, .docx"> <br> <br>
+
+                <button class="enviar" type="submit" value="Submit" required>Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -12,10 +12,11 @@
     <h1>My firts PHP page</h1>
 
     <?php
-    
+
     echo "Hello World!";
 
     ?>
-    
+
 </body>
+
 </html>

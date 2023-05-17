@@ -1,7 +1,6 @@
 <?php
 $num = filter_input(INPUT_GET, "num", FILTER_SANITIZE_SPECIAL_CHARS);
 $cont = filter_input(INPUT_GET, "cont", FILTER_SANITIZE_SPECIAL_CHARS);
-$quadrado = filter_input(INPUT_GET, "quadrado", FILTER_SANITIZE_SPECIAL_CHARS);
 
 ?>
 <!DOCTYPE html>

@@ -72,14 +72,14 @@
                         echo '<h5>Existe a string "web"? </h5>';
                         $varweb = "web";
                         if (stripos($texto, $varweb) === false) {
-                            echo "<p>NÂO</p>";
+                            echo "<p>NÃO</p>";
                         } else {
                             echo "<p>SIM</p>";
                         }
                         echo "<hr>";
 
                         echo "<h5>O texto informado tem:</h5>";
-                        echo "<p>" . strlen($texto) . "</p>";
+                        echo "<p>" . strlen($texto) . " caracteres</p>";
 
                         $arquivo = 'anotacao.txt';
                         $conteudo = array('Texto:', $texto, 'Hoje é dia ' . $data[0] . ' e agora são ' . $data[1], '-----------------------------------------------------');

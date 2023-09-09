@@ -4,21 +4,18 @@ session_start();
 
 require "logica-autenticacao.php";
 
-$page_title = "Listagem de Produtos";
+$page_title = "Listagem de Usuários";
 
 require 'header.php';
 
 require 'conexao.php';
 
-$sql = "SELECT `id`, `nome`, `urlfoto`, `descricao` FROM `produtos` ORDER BY nome";
+$sql = "SELECT `id`, `nome`, `email` FROM `usuarios` ORDER BY id";
 $stmt = $conn->query($sql);
 
+
+
 ?>
-<style>
-    .descri {
-        font-size: .75em;
-    }
-</style>
 
 <div class="table-responsive">
     <table class="table table-striped">
@@ -26,8 +23,7 @@ $stmt = $conn->query($sql);
             <tr>
                 <th scope="col" style="width: 10%;">ID</th>
                 <th scope="col" style="width: 25%;">Nome</th>
-                <th scope="col" style="width: 15%;">Imagem</th>
-                <th scope="col" style="width: 25%;">Descrição</th>
+                <th scope="col" style="width: 15%;">Email</th>
                 <?php
                 if (autenticado()) {
                 ?>
@@ -48,28 +44,17 @@ $stmt = $conn->query($sql);
                     <td><?= $row["id"] ?></td>
                     <td><?= $row["nome"] ?></td>
                     <td>
-                        <a href="<?= $row["urlfoto"] ?>" target="_blank">
-                            Link imagem
-                        </a>
-                    </td>
+                        <?= $row["email"] ?>
 
-                    <td>
-                        <?= $row["descricao"] ?>
                     </td>
                     <?php
                     if (autenticado()) {
                     ?>
                         <td>
-                            <a class="btn btn-sm btn-warning" href="form-edit-product.php?id=<?= $row["id"] ?>">
-                                <span data-feather="edit"></span>
-                                Editar
-                            </a>
-                        </td>
-                        <td>
-                            <a class="btn btn-sm btn-danger" href="delet-product.php?id=<?= $row["id"] ?>" onclick="if(!confirm('Tem certeza que deseja excluir?')) return false;">
+                            <a class="btn btn-sm btn-danger" href="delet-user.php?id=<?= $row["id"] ?>" onclick="if(!confirm('Tem certeza que deseja excluir?')) return false;">
                                 <span data-feather="trash-2"></span>
                                 Excluir
-                                </a>
+                            </a>
                         </td>
                     <?php
                     }

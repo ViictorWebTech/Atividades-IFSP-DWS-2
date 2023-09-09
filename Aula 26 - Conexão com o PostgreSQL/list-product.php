@@ -10,7 +10,7 @@ require 'header.php';
 
 require 'conexao.php';
 
-$sql = "SELECT `id`, `nome`, `urlfoto`, `descricao` FROM `produtos` ORDER BY nome";
+$sql = "SELECT id, nome, urlfoto, descricao FROM produtos ORDER BY nome";
 $stmt = $conn->query($sql);
 
 ?>

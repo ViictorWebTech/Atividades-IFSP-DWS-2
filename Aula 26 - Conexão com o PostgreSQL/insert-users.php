@@ -27,7 +27,7 @@ echo "<p><b>Email:</b> $email</p>";
 echo "<p><b>Senha hash:</b> $senha_hash</p>";
 
 /**
- * INSERT INTO `usuarios`(`id`, `nome`, `email`, `senha`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
+ * INSERT INTO usuarios(id, nome, email, senha) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
  */
 $sql = "INSERT INTO usuarios(nome, email, senha) VALUES (?, ?, ?)";
 

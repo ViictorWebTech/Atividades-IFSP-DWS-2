@@ -14,7 +14,7 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 echo "<p><b>ID:</b> $id</p>";
 
 /**
- * DELETE FROM `produtos` WHERE 0'
+ * DELETE FROM produtos WHERE 0'
  */
 $sql = "DELETE FROM produtos WHERE id = ?";
 

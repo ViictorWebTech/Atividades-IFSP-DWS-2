@@ -21,7 +21,7 @@ echo "<p><b>URL Foto:</b> $urlfoto</p>";
 echo "<p><b>Descrição:</b> $descricao</p>";
 
 /**
- * UPDATE `produtos` SET `id`='[value-1]',`nome`='[value-2]',`urlfoto`='[value-3]',`descricao`='[value-4]' WHERE 1
+ * UPDATE produtos SET id='[value-1]',nome='[value-2]',urlfoto='[value-3]',descricao='[value-4]' WHERE 1
  */
 $sql = "UPDATE produtos SET nome = ?, urlfoto = ?, descricao = ? WHERE id = ?";
 

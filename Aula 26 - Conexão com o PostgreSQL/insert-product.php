@@ -17,9 +17,9 @@ echo "<p><b>URL Foto:</b> $urlfoto</p>";
 echo "<p><b>Descrição:</b> $descricao</p>";
 
 /**
- * INSERT INTO `produtos`(`id`, `nome`, `urlfoto`, `descricao`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4])'
+ * INSERT INTO produtos(id, nome, urlfoto, descricao) VALUES ('[value-1]','[value-2]','[value-3]','[value-4])'
  */
-$sql = "INSERT INTO `produtos`(`nome`, `urlfoto`, `descricao`) VALUES (?, ?, ?)";
+$sql = "INSERT INTO produtos(nome, urlfoto, descricao) VALUES (?, ?, ?)";
 
 $stmt = $conn->prepare($sql);
 $result = $stmt->execute([$nome, $urlfoto, $descricao]);

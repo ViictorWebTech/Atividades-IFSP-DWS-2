@@ -4,7 +4,7 @@ CREATE TABLE produtos
     nome         VARCHAR(150)    NOT NULL,
     urlfoto      VARCHAR(350)    NULL,    
     descricao    TEXT            NULL,
-    PRIMARY KEY (`id`)
+    PRIMARY KEY (id)
 ) ENGINE = InnoDB;
 
 INSERT INTO produtos(nome, urlfoto, descricao) 
